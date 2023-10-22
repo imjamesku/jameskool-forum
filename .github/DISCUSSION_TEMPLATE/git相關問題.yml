@@ -1,0 +1,37 @@
+title: "[Question] "
+labels: ["Question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Please fill in the following fields to ask a question.
+  
+  # Title Field
+  - type: input
+    id: title
+    attributes:
+      label: Question Title
+      description: "Briefly describe your question in one sentence."
+    validations:
+      required: true
+  
+  # Details of the Question
+  - type: markdown
+    attributes:
+      value: |
+        ## Question Details
+        **Provide detailed information about your question. Include any relevant code or context.**
+  
+  # What Have You Tried
+  - type: markdown
+    attributes:
+      value: |
+        ## What Have You Tried?
+        **Describe what you have attempted to solve this question and what was the outcome.**
+  
+  # Expected Results
+  - type: markdown
+    attributes:
+      value: |
+        ## Expected Results
+        **What outcome or behavior were you expecting?**
