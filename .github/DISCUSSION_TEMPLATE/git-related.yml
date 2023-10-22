@@ -1,37 +1,55 @@
-title: "[Question] "
-labels: ["Question"]
+title: "[General] "
+labels: ["General Introduction"]
 body:
   - type: markdown
     attributes:
       value: |
-        ## Please fill in the following fields to ask a question.
-  
-  # Title Field
-  - type: input
-    id: title
+        This is text that will show up in the template!
+  - type: textarea
+    id: improvements
     attributes:
-      label: Question Title
-      description: "Briefly describe your question in one sentence."
+      label: Top 3 improvements
+      description: "What are the top 3 improvements we could make to this project?"
+      value: |
+        1.
+        2.
+        3.
+        ...
+      render: bash
     validations:
       required: true
-  
-  # Details of the Question
   - type: markdown
     attributes:
       value: |
-        ## Question Details
-        **Provide detailed information about your question. Include any relevant code or context.**
-  
-  # What Have You Tried
+        ## Markdown header
+        And some more markdown
+  - type: input
+    id: has-id
+    attributes:
+      label: Suggestions
+      description: A description about suggestions to help you
+    validations:
+      required: true
+  - type: dropdown
+    id: download
+    attributes:
+      label: Which area of this project could be most improved?
+      options:
+        - Documentation
+        - Pull request review time
+        - Bug fix time
+        - Release cadence
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Check that box!
+      options:
+        - label: This one!
+          required: true
+        - label: I won't stop you if you check this one, too
   - type: markdown
     attributes:
       value: |
-        ## What Have You Tried?
-        **Describe what you have attempted to solve this question and what was the outcome.**
-  
-  # Expected Results
-  - type: markdown
-    attributes:
-      value: |
-        ## Expected Results
-        **What outcome or behavior were you expecting?**
+        ### The thrilling conclusion
+        _to our template_
